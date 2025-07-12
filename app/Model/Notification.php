@@ -32,3 +32,26 @@ function notification_make_read($conn, $recipient_id, $notification_id){
 	$stmt = $conn->prepare($sql);
 	$stmt->execute([$notification_id, $recipient_id]);
 }
+function add_notification($conn, $user_id, $message, $type) {
+    // Save email to database
+    $sql = "INSERT INTO notifications (user_id, message, type, date) 
+            VALUES (?, ?, ?, NOW())";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$user_id, $message, $type]);
+
+    // Fetch user's email
+    $emailStmt = $conn->prepare("SELECT email FROM users WHERE id = ?");
+    $emailStmt->execute([$user_id]);
+    $user = $emailStmt->fetch();
+
+    if ($user && !empty($user['email'])) {
+        $to = $user['email'];
+        $subject = "You have a new notification on CyTask";
+        $body = "Hello,\n\nYou received the following notification:\n\n"
+              . "$message\n(Type: $type)\n\n"
+              . "Login to CyTask to view it.\n\nRegards,\nCyTask Team";
+        $headers = "From: no-reply@cytask.com";
+
+        mail($to, $subject, $body, $headers);
+    }
+}
