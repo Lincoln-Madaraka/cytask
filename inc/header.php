@@ -20,6 +20,7 @@
 	
 	</ul>
 </div>
+
 <script type="text/javascript">
 	var openNotification = false;
 

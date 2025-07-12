@@ -11,7 +11,6 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
     }
     $id = $_GET['id'];
     $task = get_task_by_id($conn, $id);
-
     if ($task == 0) {
     	 header("Location: tasks.php");
     	 exit();

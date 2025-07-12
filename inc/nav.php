@@ -19,7 +19,7 @@
 				<li>
 					<a href="my_task.php">
 						<i class="fa fa-tasks" aria-hidden="true"></i>
-						<span>My Task</span>
+						<span>My Task(s)</span>
 					</a>
 				</li>
 				<li>
