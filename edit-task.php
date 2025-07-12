@@ -58,7 +58,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 				</div>
 				<div class="input-holder">
 					<lable>Snooze</lable>
-					<input type="date" name="due_date" class="input-1" placeholder="Snooze" value="<?=$task['due_date']?>"><br>
+					<input type="date" name="due_date" class="input-1" placeholder="Snooze" value="<?=$task['due_date']?>" required><br>
 				</div>
 				
             <div class="input-holder">
