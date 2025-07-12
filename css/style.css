@@ -39,13 +39,13 @@
 	color: #127b8e;
 }*/
 .header .notification {
-	position: static;
+	position: relative;
 	cursor: pointer;
 }
 .header .notification span{
 	position: absolute;
-	top: 5px;
-	left: 5px;
+	top: -5px;
+	right: -5px;
 	background: #C80000;
 	padding: 1px;
 	border-radius: 50%;

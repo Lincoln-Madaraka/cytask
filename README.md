@@ -4,8 +4,8 @@
 
 ## Features
 
-+ User Role Management: Supports two roles - Admin and Employee.
-+ Task Management: Create, update, delete, and view tasks.
++ User Role Management: Supports two roles - Admin and User.
++ Task Management: Create, update, delete and view tasks.
 + Task Categorization: Filter tasks by status, and due date.
 + Authentication and Authorization: Secure login system with role-based access control.
 + Notifications: Notify users of assigned tasks and important updates.
@@ -29,10 +29,3 @@
 + Username: john 
 + Password: 123
 
-## Contributing
-
-If you'd like to contribute, please fork the repository and submit a pull request. Any contributions are welcome.
-
-## License
-
-This project is open-source and available under the MIT License.
