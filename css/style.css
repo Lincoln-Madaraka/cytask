@@ -12,13 +12,24 @@
 	background: #23242b;
 	color: #fff;
 }
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .u-name {
 	font-size: 20px;
-	padding-left: 17px;
+	padding-left: 0px;
 }
 .u-name b {
 	color: #FFD600;
 }
+
 .header i {
 	font-size: 30px;
 	cursor: pointer;
@@ -28,7 +39,7 @@
 	color: #127b8e;
 }*/
 .header .notification {
-	position: relative;
+	position: static;
 	cursor: pointer;
 }
 .header .notification span{
@@ -107,6 +118,7 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	cursor: pointer;
 }
 .side-bar ul li:hover {
 	background: #127b8e;
@@ -117,6 +129,8 @@
 	color: #eee;
 	cursor: pointer;
 	letter-spacing: 1px;
+	display: block;
+	width: 100%;
 }
 .side-bar .active a {
 	color: #FFD600 !important;
@@ -134,7 +148,7 @@
 }
 #navbtn {
 	display: inline-block;
-	margin-left: 70px;
+	margin-left: 0px;
 	font-size: 20px;
 	transition: 500ms color;
 }

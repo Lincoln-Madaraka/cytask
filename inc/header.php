@@ -1,15 +1,19 @@
 <header class="header">
+	<div class="left-header">
 	<h2 class="u-name">
 	<img src="img/logo.png" alt="CyTask Logo" style="height:24px; vertical-align:middle; margin-right:5px;">
 	Cy<b>Task</b>
-		<label for="checkbox">
-			<i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
-		</label>
 	</h2>
+	</div>
+	<div class="right-header">
 	<span class="notification" id="notificationBtn">
 		<i class="fa fa-bell" aria-hidden="true"></i>
 		<span id="notificationNum"></span>
 	</span>
+	<label for="checkbox">
+      <i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+	</div>
 </header>
 <div class="notification-bar" id="notificationBar">
 	<ul id="notifications">
