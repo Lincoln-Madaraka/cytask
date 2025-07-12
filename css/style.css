@@ -17,7 +17,7 @@
 	padding-left: 17px;
 }
 .u-name b {
-	color: #127b8e;
+	color: #FFD600;
 }
 .header i {
 	font-size: 30px;
@@ -119,10 +119,10 @@
 	letter-spacing: 1px;
 }
 .side-bar .active a {
-	color: #127b8e !important;
+	color: #FFD600 !important;
 }
 .side-bar .active a i {
-	color: #127b8e !important;
+	color: #FFD600 !important;
 }
 .side-bar ul .active:hover {
 	background: transparent;
@@ -173,7 +173,7 @@
 	display: inline-block;
     padding-left: 10px;
 	border: none;
-	background: #00CF22;
+	background: #6A3EB1;
 	padding: 10px 15px;
 	color: #fff;
 	font-size: 16px;
