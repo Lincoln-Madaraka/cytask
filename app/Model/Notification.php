@@ -42,11 +42,4 @@ function add_notification($conn, $user_id, $message, $type) {
     $emailStmt = $conn->prepare("SELECT email, full_name FROM users WHERE id = ?");
     $emailStmt->execute([$user_id]);
     $user = $emailStmt->fetch();
-
-    // Pass data to JS for EmailJS (only if in a page that outputs HTML)
-    if ($user && !empty($user['email'])) {
-        echo "<script>
-            sendNotificationEmail('" . addslashes($user['full_name']) . "', '" . $user['email'] . "', `" . addslashes($message) . "`);
-        	</script>";
-    }
 }
