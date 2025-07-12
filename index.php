@@ -81,6 +81,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 					</div>
 				</div>
 			<?php }else{ ?>
+				<h4 class="title">Tasks Overview</h4>
 				<div class="dashboard">
 					<div class="dashboard-item">
 						<i class="fa fa-tasks"></i>
