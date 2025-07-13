@@ -1,6 +1,5 @@
 # Task Management System
-### A simple Task Management System built with PHP, MySQL, and XAMPP that allows users (admin and employees) to manage tasks, assign roles, track task progress, and receive notifications.
-
+### A simple Task Management System built with PHP, MySQL, and XAMPP that allows users (admin and users) to manage tasks, assign tasks, track task progress and receive notifications.
 
 ## Features
 
@@ -15,8 +14,8 @@
 ## Requirements
 
 + XAMPP (PHP, MySQL, Apache)
-+ PHP 7.4 or higher
-+ MySQL 5.7 or higher
++ PHP
++ MySQL(Or MariaDb in my case)
 
 ## Login Credentials:
 

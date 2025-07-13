@@ -35,9 +35,6 @@
 	cursor: pointer;
 	color: #fff;
 }
-/*.header i:hover {
-	color: #127b8e;
-}*/
 .header .notification {
 	position: relative;
 	cursor: pointer;
@@ -337,4 +334,28 @@
 .dashboard-item span{
 	display: block;
     color: #fff;
+}
+.login-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cytask-logo {
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.cy {
+  color: white;
+}
+
+.task {
+  color: #FFD600;
+}
+
+.cytask-slogan {
+  font-style: italic;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 5px;
 }

@@ -9,10 +9,9 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="login-body">
-      
       <form method="POST" action="app/login.php" class="shadow p-4">
 
-      	  <h3 class="display-4">LOGIN</h3>
+      	  <h3 class="display-4 text-center">LOGIN</h3>
       	  <?php if (isset($_GET['error'])) {?>
       	  	<div class="alert alert-danger" role="alert">
 			  <?php echo stripcslashes($_GET['error']); ?>
@@ -33,14 +32,14 @@
   
 			
 		  <div class="mb-3">
-		    <label for="exampleInputEmail1" class="form-label">User name</label>
+		    <label for="exampleInputEmail1" class="form-label">Username</label>
 		    <input type="text" class="form-control" name="user_name">
 		  </div>
 		  <div class="mb-3">
 		    <label for="exampleInputPassword1" class="form-label">Password</label>
 		    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
 		  </div>
-		  <button type="submit" class="btn btn-primary">Login</button>
+		  <button type="submit" class="btn btn-primary d-block mx-auto">Login</button>
 		</form>
 
 
