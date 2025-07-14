@@ -10,7 +10,7 @@ services:
     environment:
       MYSQLHOST: db
       MYSQLUSER: root
-      MYSQLPASSWORD: examplepassword
+      MYSQLPASSWORD: linc
       MYSQLDATABASE: task_management_db
     depends_on:
       - db
@@ -19,7 +19,7 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: examplepassword
+      MYSQL_ROOT_PASSWORD: linc
       MYSQL_DATABASE: task_management_db
     ports:
       - "3306:3306"  # Expose MySQL port locally (optional)

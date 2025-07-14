@@ -57,7 +57,7 @@ function count_tasks_overdue($conn){
 
 
 function get_all_tasks_NoDeadline($conn){
-	$sql = "SELECT * FROM tasks WHERE status != 'completed' AND due_date IS NULL OR due_date = '0000-00-00' ORDER BY id DESC";
+	$sql = "SELECT * FROM tasks WHERE status != 'completed' AND due_date IS NULL ORDER BY id DESC";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute([]);
 
@@ -68,7 +68,7 @@ function get_all_tasks_NoDeadline($conn){
 	return $tasks;
 }
 function count_tasks_NoDeadline($conn){
-	$sql = "SELECT id FROM tasks WHERE status != 'completed' AND due_date IS NULL OR due_date = '0000-00-00'";
+	$sql = "SELECT id FROM tasks WHERE status != 'completed' AND due_date IS NULL";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute([]);
 

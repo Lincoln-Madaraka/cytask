@@ -1,8 +1,8 @@
 <?php  
 
-$sName = getenv('MYSQLHOST') ?: "127.0.0.1";
+$sName = getenv('MYSQLHOST') ?: "db";
 $uName = getenv('MYSQLUSER') ?: "root";
-$pass  = getenv('MYSQLPASSWORD') ?: "";
+$pass  = getenv('MYSQLPASSWORD') ?: "linc";
 $db_name = getenv('MYSQLDATABASE') ?: "task_management_db";
 
 try {

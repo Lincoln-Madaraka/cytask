@@ -28,7 +28,7 @@ CREATE TABLE `notifications` (
   `message` text NOT NULL,
   `recipient` int(11) NOT NULL,
   `type` varchar(50) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp(),
+  `date` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
   `is_read` tinyint(1) DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
