@@ -27,13 +27,14 @@ function update_user($conn, $data){
 
 function delete_user($conn, $data){
 	$user_id = $data[0];
+
 	$sql = "DELETE FROM tasks WHERE assigned_to = ?";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$user_id]);
 
 	$sql = "DELETE FROM users WHERE id=?";
 	$stmt = $conn->prepare($sql);
-	$stmt->execute($user_id);
+	$stmt->execute([$user_id]);
 }
 
 
