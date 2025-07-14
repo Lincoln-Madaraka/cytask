@@ -14,11 +14,11 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 	$password = validate_input($_POST['password']);
 
 	if (empty($user_name)) {
-		$em = "User name is required";
+		$em = "Usernname is required";
 	    header("Location: ../login.php?error=$em");
 	    exit();
 	}else if (empty($password)) {
-		$em = "Password name is required";
+		$em = "Password is required";
 	    header("Location: ../login.php?error=$em");
 	    exit();
 	}else {
