@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:80"  # Map localhost:8080 to container's port 80
+    volumes:
+      - ./:/var/www/html  # Mount current directory inside container for hot reload
+    environment:
+      MYSQLHOST: db
+      MYSQLUSER: root
+      MYSQLPASSWORD: examplepassword
+      MYSQLDATABASE: task_management_db
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: examplepassword
+      MYSQL_DATABASE: task_management_db
+    ports:
+      - "3306:3306"  # Expose MySQL port locally (optional)
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
