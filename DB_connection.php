@@ -1,9 +1,10 @@
 <?php  
 
-$sName = getenv('MYSQLHOST') ?: "db";
-$uName = getenv('MYSQLUSER') ?: "root";
-$pass  = getenv('MYSQLPASSWORD') ?: "linc";
-$db_name = getenv('MYSQLDATABASE') ?: "task_management_db";
+$sName = "centerbeam.proxy.rlwy.net";
+$uName = "root";
+$pass  = "KGgugmWsExsSphoEIDXZzgjUxSsHUZnf";
+$db_name = "railway";
+$port = 19301;
 
 try {
 	$conn = new PDO("mysql:host=$sName;dbname=$db_name", $uName, $pass);
