@@ -118,13 +118,13 @@ CREATE TABLE `users` (
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES
-(1,'Oliver','admin','$2y$10$TnyR1Y43m1EIWpb0MiwE8Ocm6rj0F2KojE3PobVfQDo9HYlAHY/7O','admin','2024-08-28 07:10:04',NULL),
-(2,'Elias A.','elias','$2y$10$Vx6FCmSzfT.TQPIDN8jiZ.c7hVWMLgsa9eCb8F8clheDaNWmjgcBO','employee','2024-08-28 07:10:40',NULL),
-(7,'John','john','$2y$10$CiV/f.jO5vIsSi0Fp1Xe7ubWG9v8uKfC.VfzQr/sjb5/gypWNdlBW','employee','2024-08-29 17:11:21',NULL),
-(8,'Oliver','oliver','$2y$10$E9Xx8UCsFcw44lfXxiq/5OJtloW381YJnu5lkn6q6uzIPdL5yH3PO','employee','2024-08-29 17:11:34',NULL),
-(9,'Matthew Ambani','Kigen','$2y$10$uSw3ThiNerb6c1Rwk4UH5.JFwW6n33wD9NEDkfO6cFIZNIvdyqVs6','employee','2025-07-12 12:09:16',NULL),
-(10,'Kim Jong','asbel','$2y$10$0f0VOf4tLBJzvyKr00XpveeIXv0nJMW/W5bAx0KTHxOKOSNV7Q0kK','employee','2025-07-12 13:33:27',NULL),
-(11,'Kimani John','spider','$2y$10$70Ky0lOhEwyBNrddFAAY8u57Kc9M8plvQfrpiOuqh7cWIpLi4ij92','employee','2025-07-12 14:40:16',NULL);
+(1,'Oliver','admin','$2y$10$TnyR1Y43m1EIWpb0MiwE8Ocm6rj0F2KojE3PobVfQDo9HYlAHY/7O','admin','2025-07-11 07:10:04',NULL),
+(2,'Elias A.','elias','$2y$10$Vx6FCmSzfT.TQPIDN8jiZ.c7hVWMLgsa9eCb8F8clheDaNWmjgcBO','employee','2025-07-11 07:10:40',NULL),
+(7,'John','john','$2y$10$CiV/f.jO5vIsSi0Fp1Xe7ubWG9v8uKfC.VfzQr/sjb5/gypWNdlBW','employee','2025-07-11 17:11:21',NULL),
+(8,'Oliver','oliver','$2y$10$E9Xx8UCsFcw44lfXxiq/5OJtloW381YJnu5lkn6q6uzIPdL5yH3PO','employee','2025-07-11 17:11:34',NULL),
+(9,'Matthew Ambani','Kigen','$2y$10$uSw3ThiNerb6c1Rwk4UH5.JFwW6n33wD9NEDkfO6cFIZNIvdyqVs6','employee','2025-07-11 12:09:16',NULL),
+(10,'Kim Jong','asbel','$2y$10$0f0VOf4tLBJzvyKr00XpveeIXv0nJMW/W5bAx0KTHxOKOSNV7Q0kK','employee','2025-07-11 13:33:27',NULL),
+(11,'Kimani John','spider','$2y$10$70Ky0lOhEwyBNrddFAAY8u57Kc9M8plvQfrpiOuqh7cWIpLi4ij92','employee','2025-07-11 14:40:16',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
