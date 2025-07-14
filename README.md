@@ -13,7 +13,7 @@
 
 ## Requirements
 
-+ XAMPP (PHP, MySQL, Apache)
++ XAMPP (PHP, MySQL, Apache, vd)
 + PHP
 + MySQL(Or MariaDb in my case)
 
