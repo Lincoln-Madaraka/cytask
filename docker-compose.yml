@@ -8,9 +8,9 @@ services:
     volumes:
       - ./:/var/www/html  # hot reload for local dev
     environment:
-      DB_HOST: db.lrbjhcejtnalhjuprtxp.supabase.co
-      DB_PORT: 5432
-      DB_USER: postgres
+      DB_HOST: aws-1-us-east-2.pooler.supabase.com
+      DB_PORT: 6543
+      DB_USER: postgres.lrbjhcejtnalhjuprtxp
       DB_PASS: TaskManager911
       DB_NAME: postgres
 
