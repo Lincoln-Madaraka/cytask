@@ -25,8 +25,6 @@ A PHP-based task management system that helps administrators assign and manage t
 -  **Due Dates & Overdue Alerts**: Track task deadlines and highlight overdue ones.
 -  **In-App Notifications**: Users get alerts when new tasks are assigned.
 -  **Filter & Status Tracking**: Track task progress (Pending, In Progress, Completed).
--  **Email Notification Integration** (via EmailJS) 
-`Due to billing/card restrictions, full email notification setup via EmailJS was not finalized. However, all necessary placeholders (template ID, service ID) are implemented and ready for activation.`
   
 - **Frontend**: HTML, CSS, Vanilla JS
 - **Backend**: PHP (no frameworks)
