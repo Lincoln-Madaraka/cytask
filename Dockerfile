@@ -1,8 +1,9 @@
 # Use official PHP image with Apache
 FROM php:8.1-apache
 
-# Enable mysqli and pdo_mysql extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Install PDO and PostgreSQL extensions
+RUN apt-get update && apt-get install -y libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
 
 # Copy your app code to Apache's document root
 COPY . /var/www/html/
@@ -10,7 +11,7 @@ COPY . /var/www/html/
 # Set working directory
 WORKDIR /var/www/html/
 
-# Set proper permissions (optional, depends on your setup)
+# Set proper permissions (optional)
 RUN chown -R www-data:www-data /var/www/html
 
 # Expose port 80

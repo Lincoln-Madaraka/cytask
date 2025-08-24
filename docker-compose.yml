@@ -4,16 +4,16 @@ services:
   app:
     build: .
     ports:
-      - "8080:80"  # Map localhost:8080 to container's port 80
+      - "8080:80"  # app available at http://localhost:8080
     volumes:
-      - ./:/var/www/html  # Mount current directory inside container for hot reload
+      - ./:/var/www/html  # hot reload for local dev
     environment:
-      MYSQLHOST: db
-      MYSQLUSER: root
-      MYSQLPASSWORD: linc
-      MYSQLDATABASE: task_management_db
-    depends_on:
-      - db
+      DB_HOST: db.lrbjhcejtnalhjuprtxp.supabase.co
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASS: TaskManager911
+      DB_NAME: postgres
+
 
   db:
     image: mysql:8.0
