@@ -36,9 +36,8 @@ if (isset($_POST['user_name']) && isset($_POST['password']) && isset($_POST['ema
 	}else {
     
        include "Model/User.php";
-       $password = password_hash($password, PASSWORD_DEFAULT);
-
-       $data = array($full_name, $user_name, $password, "employee");
+     
+	   $data = array($full_name, $user_name, $password, "employee");   
        insert_user($conn, $data);
 
        $em = "User created successfully";
