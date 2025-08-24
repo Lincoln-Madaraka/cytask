@@ -1,10 +1,10 @@
 <?php  
 
-$sName = "centerbeam.proxy.rlwy.net";
+$sName = "localhost";
 $uName = "root";
-$pass  = "KGgugmWsExsSphoEIDXZzgjUxSsHUZnf";
-$db_name = "railway";
-$port = 19301;
+$pass  = "linc";
+$db_name = "task_management_db";
+$port = 5432;
 
 try {
 	$conn = new PDO("mysql:host=$sName;port=$port;dbname=$db_name", $uName, $pass);
