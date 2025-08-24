@@ -1,6 +1,6 @@
 # Cytask - Task Management System
 
-A PHP-based task management system that helps administrators assign and manage tasks while enabling employees to track progress and receive notifications.
+A PHP-based task management system that helps administrators assign and manage tasks while enabling employees to track progress a notificationsfunction.
 
 ## 🚀 Live Demo
 🔗 [https://cytask-system.onrender.com](https://cytask-system.onrender.com)
