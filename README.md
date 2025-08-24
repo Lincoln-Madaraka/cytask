@@ -13,7 +13,7 @@ A PHP-based task management system that helps administrators assign and manage t
 - Password: `123`
 
 ### 👷 Employee
-- Username: `john`  
+- Username: `kim`  
 - Password: `123`
 
 ## 📁 Repository
@@ -45,16 +45,6 @@ A PHP-based task management system that helps administrators assign and manage t
 `├── DB_connection.php # Database connection`
 `├── Dockerfile # For containerization`
 `├── docker-compose.yml # Service orchestration`
-`├── README.md # This file`
-`└── task_management_db.sql # My SQL dump file (MariaDB)`
-## 🗃️ Database
-
-- **Database Used**: MariaDB(MySQL ON Kali Linux) (hosted on Railway)
-- **SQL Dump File**: [`task_management_db.sql`](./task_management_db.sql)
-
-> This file contains all required tables (`users`, `tasks`, `notifications`) and seed data. It can be imported via:
-> ```bash```
-> ```mysql -u root -p railways < task_management_db.sql```
 
 ## Testing Notes
 - Task creation triggers both a DB notification and prepares for email dispatch.
