@@ -1,9 +1,9 @@
 <?php  
 
-$sName = "localhost";
+$sName = "db.lrbjhcejtnalhjuprtxp.supabase.co";
 $uName = "postgres";
-$pass  = "linc";
-$db_name = "task_management_db";
+$pass  = "TaskManager911";
+$db_name = "postgres";
 $port = 5432;
 
 try {
