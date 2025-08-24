@@ -14,12 +14,14 @@ function get_all_users($conn){
 
 
 function insert_user($conn, $data){
+	$data[2] = password_hash($data[2], PASSWORD_DEFAULT);
 	$sql = "INSERT INTO users (full_name, username, password, role) VALUES(?,?,?, ?)";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute($data);
 }
 
 function update_user($conn, $data){
+	$data[2] = password_hash($data[2], PASSWORD_DEFAULT);
 	$sql = "UPDATE users SET full_name=?, username=?, password=?, role=? WHERE id=? AND role=?";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute($data);
