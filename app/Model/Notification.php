@@ -14,7 +14,7 @@ function get_all_my_notifications($conn, $id){
 
 
 function count_notification($conn, $id){
-	$sql = "SELECT id FROM notifications WHERE recipient=? AND is_read=0";
+	$sql = "SELECT id FROM notifications WHERE recipient=? AND is_read=false";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute([$id]);
 
