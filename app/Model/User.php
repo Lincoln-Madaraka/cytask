@@ -53,6 +53,7 @@ function get_user_by_id($conn, $id){
 }
 
 function update_profile($conn, $data){
+	$data[1] = password_hash($data[1], PASSWORD_DEFAULT); 
 	$sql = "UPDATE users SET full_name=?,  password=? WHERE id=? ";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute($data);
