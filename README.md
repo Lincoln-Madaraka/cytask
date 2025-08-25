@@ -34,17 +34,33 @@ A PHP-based task management system that helps administrators assign and manage t
 - **Email Notification (Planned)**: EmailJS (my optiona for this)
 
 ## My Directory Structure
-`cytask/`
-`├── app/`
-`│ ├── Model/ # Database model classes (User, Task, Notification)`
-`│ └── *.php # Core logic (login, add-task, notifications etc.)`
-`├── css/ # Styling`
-`├── img/ # My logo & .ico`
-`├── inc/ # Header & navigation includes`
-`├── *.php # Pages (login.php, profile.php, create_task.php...)`
-`├── DB_connection.php # Database connection`
-`├── Dockerfile # For containerization`
-`├── docker-compose.yml # Service orchestration`
+```bash
+cytask/
+├── add-user.php
+├── app/ #Database model classes (User, Task, Notification) and Core logic (login, add-task, notifications etc.)
+├── css/
+├── cytask_schema.sql
+├── DB_connection.php
+├── docker-compose.yml
+├── Dockerfile
+├── delete-task.php
+├── delete-user.php
+├── edit-task.php
+├── edit-task-employee.php
+├── edit-user.php
+├── edit_profile.php
+├── img/ #Logo & .ico
+├── inc/ #Header & navigation includes
+├── index.php
+├── login.php
+├── logout.php
+├── my_task.php
+├── notifications.php
+├── profile.php
+├── README.md
+├── tasks.php
+└── user.php
+```
 
 ## Testing Notes
 - Task creation triggers both a DB notification and prepares for email dispatch.
@@ -53,5 +69,3 @@ A PHP-based task management system that helps administrators assign and manage t
 - All commits are visible on the [Commit History](https://github.com/Lincoln-Madaraka/cytask/commits/main/).
 
 > © Lincoln Madaraka
-
-Working on the deploy
