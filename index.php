@@ -46,7 +46,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 				<div class="dashboard">
 					<div class="dashboard-item">
 						<i class="fa fa-users"></i>
-						<span><?=$num_users?> Employee</span>
+						<span><?=$num_users?> Employees</span>
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-tasks"></i>
