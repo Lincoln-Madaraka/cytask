@@ -1,10 +1,10 @@
 <?php  
 
-$sName = "aws-1-us-east-2.pooler.supabase.com";
-$uName = "postgres.lrbjhcejtnalhjuprtxp";
-$pass  = "TaskManager911";
-$db_name = "postgres";
-$port = 6543;
+$sName = getenv('DB_HOST') ?: "aws-1-us-east-2.pooler.supabase.com";
+$uName = getenv('DB_USER') ?: "postgres.lrbjhcejtnalhjuprtxp";
+$pass  =  getenv('DB_PASS') ?:"TaskManager911";
+$db_name = getenv('DB_NAME') ?: "postgres";
+$port = getenv('DB_PORT') ?: 6543;
 
 try {
 	$conn = new PDO(
