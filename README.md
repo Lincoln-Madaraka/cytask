@@ -2,17 +2,17 @@
 
 A PHP-based task management system that helps administrators assign and manage tasks while enabling employees to track progress a notificationsfunction.
 
-## 🚀 Live Demo
+## Live Demo
 🔗 [https://cytask-system.onrender.com](https://cytask-system.onrender.com)
 
 ## Login Credentials
 
 > Used for demo testing
-### 🧑‍💼 Admin
+### Admin Login
 - Username: `admin`  
 - Password: `123`
 
-### 👷 Employee
+### Employee Login
 - Username: `kim`  
 - Password: `123`
 
@@ -31,7 +31,7 @@ A PHP-based task management system that helps administrators assign and manage t
 - **Database**: MariaDB on Railway
 - **Version Control**: Git & GitHub
 - **Deployment**: Dockerized on Render [Live Site](https://cytask-system.onrender.com)
-- **Email Notification (Planned)**: EmailJS (my optiona for this)
+- **Email Notification (Feature Coming Soon)**
 
 ## My Directory Structure
 ```bash
