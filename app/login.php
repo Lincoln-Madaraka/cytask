@@ -15,7 +15,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 	$password = validate_input($_POST['password']);
 
 	if (empty($user_name)) {
-		$em = "Usernname is required";
+		$em = "Username is required";
 	    header("Location: ../login.php?error=$em");
 	    exit();
 	}else if (empty($password)) {
@@ -24,7 +24,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 	    exit();
 	}else {
     
-       $sql = "SELECT * FROM users WHERE username = ?";
+       $sql = "SELECT * FROM public.users WHERE username = ?";
        $stmt = $conn->prepare($sql);
        $stmt->execute([$user_name]);
 
