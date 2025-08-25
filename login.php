@@ -37,7 +37,10 @@
 		  </div>
 		  <div class="mb-3">
 		    <label for="exampleInputPassword1" class="form-label">Password</label>
-		    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+			<div class="input-group">
+				<input type="password" class="form-control" name="password" id="exampleInputPassword1">
+				<button class="btn btn-outline-secondary" type="button" id="togglePassword">Show</button>
+			</div>
 		  </div>
 		  <button type="submit" class="btn btn-primary d-block mx-auto">Login</button>
 		</form>
