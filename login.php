@@ -36,11 +36,11 @@
   
 			
 		  <div class="mb-3">
-		    <label for="exampleInputEmail1" class="form-label">Username</label>
+		    <label for="exampleInputEmail1" class="form-label">Username:</label>
 		    <input type="text" class="form-control" name="user_name">
 		  </div>
 		  <div class="mb-3">
-		    <label for="exampleInputPassword1" class="form-label">Password</label>
+		    <label for="exampleInputPassword1" class="form-label">Password:</label>
 			<div class="input-group">
 				<input type="password" class="form-control" name="password" id="exampleInputPassword1">
 				<button class="btn btn-outline-secondary" type="button" id="togglePassword">Show</button>

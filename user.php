@@ -50,6 +50,23 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 				</tr>
 			   <?php	} ?>
 			</table>
+			<!-- 📱 Mobile cards version -->
+			<div class="mobile-cards">
+				<?php $i=0; foreach ($users as $user) { ?>
+				<div class="user-card">
+				<div class="user-info">
+					<p><strong>#<?=++$i?></strong></p>
+					<p><strong>Full Name:</strong> <?=$user['full_name']?></p>
+					<p><strong>Username:</strong> <?=$user['username']?></p>
+					<p><strong>Role:</strong> <?=$user['role']?></p>
+				</div>
+				<div class="user-actions">
+					<a href="edit-user.php?id=<?=$user['id']?>" class="edit-btn">Edit</a>
+					<a href="delete-user.php?id=<?=$user['id']?>" class="delete-btn">Delete</a>
+				</div>
+				</div>
+				<?php } ?>
+			</div>
 		<?php }else { ?>
 			<h3>Empty</h3>
 		<?php  }?>
