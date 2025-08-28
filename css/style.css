@@ -364,6 +364,7 @@
 }
 .app-brand {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .cytask-logo {
@@ -375,11 +376,13 @@
 .cy {
   color: #fff;          /* white for “Cy” */
   display: inline;
+  font-weight: 700;
 }
 
 .task {
   color: #FFD600;       /* yellow for “task” */
   display: inline;
+  font-weight: 700;
 }
 
 .cytask-slogan {
@@ -388,3 +391,9 @@
   color: #ccc;
   margin-top: 5px;
 }
+.login-container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
