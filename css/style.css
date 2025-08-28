@@ -486,5 +486,5 @@
   }
 }
 .desktop-add-user {
-    display: none;
+    display: none !important;
   }
