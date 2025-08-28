@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="login-body">
+	<div class="login-container text-center">
 	  <div class="app-brand text-center mb-4">
 		<img src="img/logo.png" alt="Cytask Logo" class="cytask-logo">
 		<h2 class="cy"><span class="cy">Cy</span><span class="task">task</span></h2>
@@ -51,6 +52,7 @@
 		  </div>
 		  <button type="submit" class="btn btn-primary d-block mx-auto">Login</button>
 		</form>
+		  </div>
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -362,3 +362,29 @@
   color: #ccc;
   margin-top: 5px;
 }
+.app-brand {
+  margin-bottom: 20px;
+}
+
+.cytask-logo {
+  height: 50px;         /* bigger logo */
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.cy {
+  color: #fff;          /* white for “Cy” */
+  display: inline;
+}
+
+.task {
+  color: #FFD600;       /* yellow for “task” */
+  display: inline;
+}
+
+.cytask-slogan {
+  font-style: italic;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 5px;
+}
