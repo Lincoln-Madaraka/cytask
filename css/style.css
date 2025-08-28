@@ -419,3 +419,7 @@
 .form-1 .form-control::placeholder {
   color: #aaa; /* lighter placeholder */
 }
+.form-1 h3 {
+  color: #FFD600; /* yellowish */
+  font-weight: 700;
+}
