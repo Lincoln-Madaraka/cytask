@@ -11,13 +11,13 @@
 </head>
 <body class="login-body">
 	<div class="login-container text-center">
-	  <div class="app-brand text-center mb-4">
-		<img src="img/logo.png" alt="Cytask Logo" class="cytask-logo">
-		<h2 class="cy"><span class="cy">Cy</span><span class="task">task</span></h2>
-		<p class="cytask-slogan">Task management made easy.</p>
-	</div>
-
+	 
       <form method="POST" action="app/login.php" class="form-1">
+		<div class="app-brand text-center mb-4">
+			<img src="img/logo.png" alt="Cytask Logo" class="cytask-logo">
+			<h2 class="cy"><span class="cy">Cy</span><span class="task">task</span></h2>
+			<p class="cytask-slogan">Task management made easy.</p>
+		</div>
 
       	  <h3 class="display-4 text-center">LOGIN</h3>
       	  <?php if (isset($_GET['error'])) {?>
