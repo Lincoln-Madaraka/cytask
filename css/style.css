@@ -431,6 +431,15 @@
 .mobile-cards {
   display: none;
 }
+/* Defaults (desktop view) */
+.add-user-btn {
+  display: none; /* Hide floating + button on desktop */
+}
+
+.desktop-add-user {
+  display: inline-block; /* Normal text button visible on desktop */
+}
+
 
 /* Mobile view */
 @media (max-width: 768px) {
@@ -484,7 +493,8 @@
   .add-user-btn:hover {
     background: #6a0dad;
   }
-}
-.desktop-add-user {
+  .desktop-add-user {
     display: none !important;
   }
+}
+
