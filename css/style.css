@@ -423,3 +423,7 @@
   color: #FFD600; /* yellowish */
   font-weight: 700;
 }
+.form-1 label {
+  color: #fff;
+  font-weight: 600;
+}
