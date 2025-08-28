@@ -465,7 +465,7 @@
   /* Floating Add User button */
   .add-user-btn {
     position: fixed;
-    top: 15px;
+    bottom: 20px; 
     right: 15px;
     background: purple;
     color: #fff;
@@ -485,3 +485,6 @@
     background: #6a0dad;
   }
 }
+.desktop-add-user {
+    display: none;
+  }
