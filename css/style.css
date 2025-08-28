@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: arial, sans-serif;
+	font-family: "Nunito", sans-serif;
 }
 .header {
 	display: flex;
@@ -167,6 +167,7 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	background-color: lch(5.12% 37.07 308.79);
 }
 .login-body form {
 	max-width:420px;
@@ -239,8 +240,6 @@
 	width: 90%;
 	margin-top: 30px;
 }
-
-
 .delete-btn{
 	text-decoration: none;
 	display: inline-block;
@@ -281,6 +280,10 @@
 .form-1 {
 	width: 90%;
 	max-width: 500px;
+	background: #fff; 
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .input-holder lable {
 	display: block;

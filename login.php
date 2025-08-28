@@ -6,10 +6,17 @@
 	<title>Login | Cytask</title>
 	<link rel="icon" type="image/x-icon" href="img/logo.ico">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="login-body">
-      <form method="POST" action="app/login.php" class="shadow p-4">
+	  <div class="app-brand text-center mb-4">
+		<img src="img/logo.png" alt="Cytask Logo" class="cytask-logo">
+		<h2 class="cy"><span class="cy">Cy</span><span class="task">task</span></h2>
+		<p class="cytask-slogan">Task management made easy.</p>
+	</div>
+
+      <form method="POST" action="app/login.php" class="form-1">
 
       	  <h3 class="display-4 text-center">LOGIN</h3>
       	  <?php if (isset($_GET['error'])) {?>
