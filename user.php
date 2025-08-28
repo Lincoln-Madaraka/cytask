@@ -22,7 +22,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Manage Users <a href="add-user.php">Add User</a></h4>
+			<h4 class="title">Manage Users <a href="add-user.php" class="desktop-add-user">Add User</a></h4>
 			<a href="add-user.php" class="add-user-btn">+</a>
 
 			<?php if (isset($_GET['success'])) {?>
@@ -31,7 +31,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
 		<?php } ?>
 			<?php if ($users != 0) { ?>
-			<table class="main-table">
+			<table class="main-table desktop-table">
 				<tr>
 					<th>#</th>
 					<th>Full Name</th>
