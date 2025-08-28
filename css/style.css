@@ -172,7 +172,7 @@
 }
 .login-body form {
 	max-width:420px;
-	width: 90%;
+	width: 100%;
 }
 
 .section-1 {
@@ -286,7 +286,7 @@
 .form-1 {
 	width: 90%;
 	max-width: 500px;
-	background: #fff; 
+	background: #131212; 
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -348,6 +348,7 @@
   margin-bottom: 40px;
   text-align: center;
   font-weight: 700;
+  color: #FFD600;
 }
 .cytask-logo {
   height: 28px;
@@ -410,3 +411,11 @@
   text-align: center;
 }
 
+.form-1 .form-control {
+  background: #111;   /* dark background */
+  color: #fff;        /* white text */
+  border: 1px solid #444; /* subtle border */
+}
+.form-1 .form-control::placeholder {
+  color: #aaa; /* lighter placeholder */
+}
