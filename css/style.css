@@ -427,3 +427,61 @@
   color: #fff;
   font-weight: 600;
 }
+/* Default: hide mobile version */
+.mobile-cards {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .desktop-table {
+    display: none; /* hide table */
+  }
+  .mobile-cards {
+    display: block;
+  }
+  .user-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .user-card .user-info p {
+    margin: 5px 0;
+  }
+  .user-card .user-actions {
+    margin-top: 10px;
+  }
+  .user-card .edit-btn,
+  .user-card .delete-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  /* Floating Add User button */
+  .add-user-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: purple;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  .add-user-btn:hover {
+    background: #6a0dad;
+  }
+}
