@@ -43,7 +43,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 		<section class="section-1">
 			<?php if ($_SESSION['role'] == "admin") { ?>
 				<h4 class="title">Tasks Overview</h4>
-				<div class="dashboard">
+				<div class="dashboard desktop-only">
 					<div class="dashboard-item">
 						<i class="fa fa-users"></i>
 						<span><?=$num_users?> Employees</span>
