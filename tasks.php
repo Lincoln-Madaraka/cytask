@@ -44,6 +44,19 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
+			<div class="task-filters">
+  <h4 class="all-tasks">All Tasks (<?=$num_task?>)</h4>
+  <div class="filter-buttons">
+    <a href="tasks.php?due_date=Due Today" 
+       class="filter-btn <?=($text=='Due Today')?'active-filter':''?>">Due Today</a>
+    <a href="tasks.php?due_date=Overdue" 
+       class="filter-btn <?=($text=='Overdue')?'active-filter':''?>">Overdue</a>
+    <a href="tasks.php?due_date=No Deadline" 
+       class="filter-btn <?=($text=='No Deadline')?'active-filter':''?>">No Deadline</a>
+  </div>
+  <!-- Desktop only create button -->
+  <a href="create_task.php" class="btn desktop-add-user">+ Create Task</a>
+</div>
 			<h4 class="title-2">
 				<a href="create_task.php" class="btn">Create Task</a>
 				<a href="tasks.php?due_date=Due Today">Due Today</a>
