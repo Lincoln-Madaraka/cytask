@@ -497,4 +497,43 @@
     display: none !important;
   }
 }
+.task-filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.task-filters .all-tasks {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-filters .filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  background: #6A3EB1;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.filter-btn:hover {
+  opacity: .7;
+}
+
+.active-filter {
+  background: #FFD600;
+  color: #23242b;
+  font-weight: bold;
+}
 

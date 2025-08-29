@@ -45,27 +45,18 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
 			<div class="task-filters">
-  <h4 class="all-tasks">All Tasks (<?=$num_task?>)</h4>
-  <div class="filter-buttons">
-    <a href="tasks.php?due_date=Due Today" 
-       class="filter-btn <?=($text=='Due Today')?'active-filter':''?>">Due Today</a>
-    <a href="tasks.php?due_date=Overdue" 
-       class="filter-btn <?=($text=='Overdue')?'active-filter':''?>">Overdue</a>
-    <a href="tasks.php?due_date=No Deadline" 
-       class="filter-btn <?=($text=='No Deadline')?'active-filter':''?>">No Deadline</a>
-  </div>
-  <!-- Desktop only create button -->
-  <a href="create_task.php" class="btn desktop-add-user">+ Create Task</a>
-</div>
-			<h4 class="title-2">
-				<a href="create_task.php" class="btn">Create Task</a>
-				<a href="tasks.php?due_date=Due Today">Due Today</a>
-				<a href="tasks.php?due_date=Overdue">Overdue</a>
-				<a href="tasks.php?due_date=No Deadline">No Deadline</a>
-				<a href="tasks.php">All Tasks</a>
- 
-			</h4>
-         <h4 class="title-2"><?=$text?> (<?=$num_task?>)</h4>
+			<h4 class="all-tasks">All Tasks (<?=$num_task?>)</h4>
+			<div class="filter-buttons">
+				<a href="tasks.php?due_date=Due Today" 
+				class="filter-btn <?=($text=='Due Today')?'active-filter':''?>">Due Today</a>
+				<a href="tasks.php?due_date=Overdue" 
+				class="filter-btn <?=($text=='Overdue')?'active-filter':''?>">Overdue</a>
+				<a href="tasks.php?due_date=No Deadline" 
+				class="filter-btn <?=($text=='No Deadline')?'active-filter':''?>">No Deadline</a>
+			</div>
+			<!-- Desktop only create button -->
+			<a href="create_task.php" class="btn desktop-add-user">+ Create Task</a>
+			</div>
 			<?php if (isset($_GET['success'])) {?>
       	  	<div class="success" role="alert">
 			  <?php echo stripcslashes($_GET['success']); ?>
@@ -105,6 +96,31 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 				</tr>
 			   <?php	} ?>
 			</table>
+			<!-- Mobile Cards -->
+			<div class="mobile-cards">
+			<?php $i=0; foreach ($tasks as $task) { ?>
+				<div class="user-card">
+				<div class="user-info">
+					<p><b>#<?=++$i?> - <?=$task['title']?></b></p>
+					<p><?=$task['description']?></p>
+					<p><b>Assigned To:</b> 
+					<?php foreach ($users as $user) {
+						if($user['id'] == $task['assigned_to']) echo $user['full_name'];
+					}?>
+					</p>
+					<p><b>Due:</b> <?=$task['due_date']=="" ? "No Deadline" : $task['due_date']?></p>
+					<p><b>Status:</b> <?=$task['status']?></p>
+				</div>
+				<div class="user-actions">
+					<a href="edit-task.php?id=<?=$task['id']?>" class="edit-btn">Edit</a>
+					<a href="delete-task.php?id=<?=$task['id']?>" class="delete-btn">Delete</a>
+				</div>
+				</div>
+			<?php } ?>
+			</div>
+
+			<!-- Floating + for Mobile -->
+			<a href="create_task.php" class="add-user-btn">+</a>	
 		<?php }else { ?>
 			<h3>Empty</h3>
 		<?php  }?>
