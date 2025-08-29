@@ -63,7 +63,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
 		<?php } ?>
 			<?php if ($tasks != 0) { ?>
-			<table class="main-table">
+			<table class="main-table desktop-table">
 				<tr>
 					<th>#</th>
 					<th>Title</th>

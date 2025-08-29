@@ -438,7 +438,7 @@
 
 .desktop-add-user {
   display: inline-block; /* Normal text button visible on desktop */
-  background: #E63946; 
+  background: hsl(355, 94%, 30%); 
   padding: 10px 20px;
   color: #fff;
   font-size: 16px;
@@ -448,6 +448,10 @@
   outline: none;
   transition: background 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.desktop-add-user:hover {
+  background: #c71c30; /* darker red on hover */
 }
 
 
