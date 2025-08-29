@@ -550,11 +550,4 @@
   color: #23242b;
   font-weight: bold;
 }
-.desktop-only {
-  display: block;
-}
-@media (max-width: 768px) {
-  .desktop-only {
-    display: none !important;
-  }
-}
+
