@@ -438,6 +438,16 @@
 
 .desktop-add-user {
   display: inline-block; /* Normal text button visible on desktop */
+  background: #E63946; 
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 
