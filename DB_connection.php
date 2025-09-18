@@ -1,10 +1,10 @@
 <?php  
 
-$sName   = "aws-1-ap-south-1.pooler.supabase.com";
-$uName   = "postgres.hwqiletkwoegcwswmjjl"; // full pooler username
-$pass    = "TaskManager911";                 // pooler password
-$db_name = "postgres";
-$port    = 5432;
+$sName   = getenv("DB_HOST") ?: "aws-1-ap-south-1.pooler.supabase.com";
+$uName   = getenv("DB_USER") ?: "postgres.hwqiletkwoegcwswmjjl";
+$pass    = getenv("DB_PASS") ?: "TaskManager911";
+$db_name = getenv("DB_NAME") ?: "postgres";
+$port    = getenv("DB_PORT") ?: "5432";
 
 try {
     $conn = new PDO(
@@ -16,7 +16,7 @@ try {
             PDO::ATTR_EMULATE_PREPARES => true 
         ]
     );
-    echo "Connected to Supabase Postgres!";
+    //echo "Connected to Supabase Postgres!";
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
     exit;
